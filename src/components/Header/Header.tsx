@@ -1,3 +1,6 @@
+import "../../index.css";
+import "./Header.css";
+
 import { FC } from "react";
 
 interface NavLinkProps {
@@ -17,32 +20,32 @@ const Header: FC<NavLinkProps> = ({ linkNames }) => {
           <ul>
             <li className="current">
               <a className="smoothscroll" href="#hero">
-                Home
+                {linkNames[0]}
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#about">
-                About
+                {linkNames[1]}
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                {linkNames[2]}
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                {linkNames[3]}
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#testimonials">
-                Testimonials
+                {linkNames[4]}
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#contact">
-                Say Hello
+                {linkNames[5]}
               </a>
             </li>
           </ul>
