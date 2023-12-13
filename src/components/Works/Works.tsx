@@ -87,7 +87,7 @@ const Works: FC = () => {
           <a href="#modal-07" className="folio-item__thumb">
             <img
               src="images/portfolio/rucksack.jpg"
-              srcset="images/portfolio/rucksack.jpg 1x, 
+              srcSet="images/portfolio/rucksack.jpg 1x, 
                                  images/portfolio/rucksack@2x.jpg 2x"
               alt=""
             />
@@ -98,7 +98,7 @@ const Works: FC = () => {
           <a href="#modal-08" className="folio-item__thumb">
             <img
               src="images/portfolio/sanddunes.jpg"
-              srcset="images/portfolio/sanddunes.jpg 1x, 
+              srcSet="images/portfolio/sanddunes.jpg 1x, 
                                  images/portfolio/sanddunes@2x.jpg 2x"
               alt=""
             />
