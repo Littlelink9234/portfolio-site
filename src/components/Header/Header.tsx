@@ -39,13 +39,8 @@ const Header: FC<NavLinkProps> = ({ linkNames }) => {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#testimonials">
-                {linkNames[4]}
-              </a>
-            </li>
-            <li>
               <a className="smoothscroll" href="#contact">
-                {linkNames[5]}
+                {linkNames[4]}
               </a>
             </li>
           </ul>
