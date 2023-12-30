@@ -54,7 +54,7 @@ const Works: FC = () => {
           <a href="#modal-04" className="folio-item__thumb">
             <img
               src="images/portfolio/shutterbug.jpg"
-              srcset="images/portfolio/shutterbug.jpg 1x, 
+              srcSet="images/portfolio/shutterbug.jpg 1x, 
                                  images/portfolio/shutterbug@2x.jpg 2x"
               alt=""
             />
@@ -65,7 +65,7 @@ const Works: FC = () => {
           <a href="#modal-05" className="folio-item__thumb">
             <img
               src="images/portfolio/fuji.jpg"
-              srcset="images/portfolio/fuji.jpg 1x, 
+              srcSet="images/portfolio/fuji.jpg 1x, 
                                  images/portfolio/fuji@2x.jpg 2x"
               alt=""
             />
@@ -76,7 +76,7 @@ const Works: FC = () => {
           <a href="#modal-06" className="folio-item__thumb">
             <img
               src="images/portfolio/skaterboy.jpg"
-              srcset="images/portfolio/skaterboy.jpg 1x, 
+              srcSet="images/portfolio/skaterboy.jpg 1x, 
                                  images/portfolio/skaterboy@2x.jpg 2x"
               alt=""
             />

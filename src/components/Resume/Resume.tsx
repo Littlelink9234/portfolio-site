@@ -63,7 +63,7 @@ const Resume: FC = () => {
               <h4 className="h3">University of Life</h4>
               <p className="resume-block__header-meta">
                 <span>Master in Graphic Design</span>
-                <span class="resume-block__header-date">April 2015</span>
+                <span className="resume-block__header-date">April 2015</span>
               </p>
             </div>
 

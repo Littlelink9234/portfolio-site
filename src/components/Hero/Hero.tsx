@@ -1,7 +1,16 @@
 import "../../index.css";
 import "./Hero.css";
 
-import { FC } from "react";
+import { Events, Link, scrollSpy } from "react-scroll";
+import { FC, useEffect } from "react";
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useParallax } from "react-scroll-parallax";
 
 /*
     hero
@@ -9,9 +18,34 @@ import { FC } from "react";
 */
 
 const Hero: FC = () => {
+  const { ref } = useParallax({ speed: -34 });
+
+  // useEffect is used to perform side effects in functional components.
+  // Here, it's used to register scroll events and update scrollSpy when the component mounts.
+  useEffect(() => {
+    // Registering the 'begin' event and logging it to the console when triggered.
+    Events.scrollEvent.register("begin", (to, element) => {
+      console.log("begin", to, element);
+    });
+
+    // Registering the 'end' event and logging it to the console when triggered.
+    Events.scrollEvent.register("end", (to, element) => {
+      console.log("end", to, element);
+    });
+
+    // Updating scrollSpy when the component mounts.
+    scrollSpy.update();
+
+    // Returning a cleanup function to remove the registered events when the component unmounts.
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
   return (
     <section id="hero" className="s-hero target-section">
-      <div className="s-hero__bg rellax" data-rellax-speed="-7"></div>
+      <div className="s-hero__bg rellax" ref={ref}></div>
       <div className="row s-hero__content">
         <div className="column">
           <div className="s-hero__content-about">
@@ -33,29 +67,28 @@ const Hero: FC = () => {
 
             <div className="s-hero__content-social">
               <a href="#0">
-                <i className="fab fa-facebook-square" aria-hidden="true"></i>
+                <FontAwesomeIcon icon={faFacebookSquare} />
               </a>
               <a href="#0">
-                <i className="fab fa-twitter" aria-hidden="true"></i>
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a href="#0">
-                <i className="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="#0">
-                <i className="fab fa-dribbble" aria-hidden="true"></i>
-              </a>
-              <a href="#0">
-                <i className="fab fa-behance" aria-hidden="true"></i>
-              </a>
-              <a href="#0">
-                <i className="fab fa-linkedin" aria-hidden="true"></i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="s-hero__scroll">
-        <a href="#about" className="s-hero__scroll-link smoothscroll">
+        <Link
+          href="#about"
+          className="s-hero__scroll-link smoothscroll"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={1300}
+        >
           <span className="scroll-arrow">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +100,7 @@ const Hero: FC = () => {
             </svg>
           </span>
           <span className="scroll-text">Scroll Down</span>
-        </a>
+        </Link>
       </div>
     </section>
   );
