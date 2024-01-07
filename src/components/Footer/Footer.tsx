@@ -1,13 +1,37 @@
 import "../../index.css";
 import "./Footer.css";
 
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 /*  footer
     ================================================== 
 */
 
 const Footer: FC = () => {
+  useEffect(() => {
+    backToTop();
+  }, []);
+
+  const backToTop = () => {
+    const pxShow = 900;
+    const goTopButton = document.querySelector(".ss-go-top");
+
+    if (!goTopButton) return;
+
+    // Show or hide the button
+    if (window.scrollY >= pxShow) goTopButton.classList.add("link-is-visible");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= pxShow) {
+        if (!goTopButton.classList.contains("link-is-visible"))
+          goTopButton.classList.add("link-is-visible");
+      } else {
+        goTopButton.classList.remove("link-is-visible");
+      }
+    });
+  };
+
   return (
     <footer className="s-footer">
       <div className="row">
@@ -50,11 +74,16 @@ const Footer: FC = () => {
       </div>
 
       <div className="ss-go-top">
-        <a className="smoothscroll" title="Back to Top" href="#top">
+        <Link
+          className="go-top"
+          title="Back to Top"
+          to="/"
+          onClick={() => scroll.scrollToTop()}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
           </svg>
-        </a>
+        </Link>
       </div>
     </footer>
   );
