@@ -5,6 +5,7 @@ import { Events, Link, scrollSpy } from "react-scroll";
 import { FC, useEffect } from "react";
 import {
   faFacebookSquare,
+  faGithub,
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
@@ -49,30 +50,63 @@ const Hero: FC = () => {
       <div className="row s-hero__content">
         <div className="column">
           <div className="s-hero__content-about">
-            <h1>I'm Jonathan Doe.</h1>
+            <h1>I'm Jason Carvalho.</h1>
             <h3>
-              I'm a Manila based <span>graphic designer</span>,{" "}
-              <span>illustrator</span> and <span>webdesigner</span> creating
-              awesome and effective visual identities for companies of all sizes
-              around the globe. Let's{" "}
-              <a className="smoothscroll" href="#about">
+              I'm a New York based <span>software engineer</span>,{" "}
+              <span>gamer</span> and <span>technology enthusiast</span> building
+              awesome and effective applications for companies of all sizes.
+              Let's{" "}
+              <Link
+                className="smoothscroll"
+                href="#about"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1300}
+              >
                 start scrolling
-              </a>
+              </Link>{" "}
               and learn more{" "}
-              <a className="smoothscroll" href="#about">
+              <Link
+                className="smoothscroll"
+                href="#about"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1300}
+              >
                 about me
-              </a>
+              </Link>
               .
             </h3>
 
             <div className="s-hero__content-social">
-              <a href="#0">
+              <a
+                href="https://www.facebook.com/jason.carvalho.125"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faFacebookSquare} />
               </a>
-              <a href="#0">
+              <a
+                href="https://www.twitter.com/lead1290"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="#0">
+              <a
+                href="https://www.github.com/Littlelink9234"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jasoncarvalho1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>

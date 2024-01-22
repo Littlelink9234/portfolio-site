@@ -14,23 +14,24 @@ const About: FC = () => {
         <div className="column large-3 tab-12">
           <img
             className="s-about__pic"
-            src="images/avatars/user-06.jpg"
+            src="images/avatar/profile_image.jpg"
             alt=""
           />
         </div>
         <div className="column large-9 tab-12 s-about__content">
           <h3>About Me</h3>
+
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam.
+            Ever since I was young I was always eager to learn about technology.
+            I started playing video games at a young age and that furthered my
+            interests in pursuing a career in the tech world. I began working on
+            the hardware side fixing computers as a PC technician and decided to
+            engage in software development in college. After graduating school,
+            I worked for various companies as a Software Developer learning
+            different kinds of architectures and software designs. I am
+            fascinated by the issues technology has solved and that pushes me to
+            be a part of that community. Hopefully I can make the world a better
+            place by helping others with technology.
           </p>
 
           <hr />
@@ -40,11 +41,11 @@ const About: FC = () => {
               <h3>Contact Details</h3>
 
               <p>
-                Jonathan Doe <br />
-                1600 Amphitheatre Parkway <br />
-                Mountain View, CA 94043 US <br />
-                <a href="tel:+1975432345">+197 543 2345</a> <br />
-                <a href="mailto:#0">sayhello@ceevee.com</a>
+                Jason Carvalho <br />
+                Bayside, NY USA <br />
+                <a href="mailto:jason.carvalho1@gmail.com">
+                  jason.carvalho1@gmail.com
+                </a>
               </p>
             </div>
             <div className="column w-1000-stack">
