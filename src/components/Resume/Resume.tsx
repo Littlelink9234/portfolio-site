@@ -13,41 +13,47 @@ const Resume: FC = () => {
         <div className="column large-9 tab-12">
           <div className="resume-block">
             <div className="resume-block__header">
-              <h4 className="h3">Dropbox</h4>
+              <h4 className="h3">InfoTrack</h4>
               <p className="resume-block__header-meta">
-                <span>Product Designer</span>
+                <span>Software Engineer</span>
                 <span className="resume-block__header-date">
-                  August 2019 - Present
+                  June 2023 - Present
                 </span>
               </p>
             </div>
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore vero quidem nobis maxime dolorem aliquam quisquam eum
-              ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat
-              nam. Impedit aperiam nesciunt facilis! Porro architecto dicta
-              inventore tempora ratione quia odio.
+              Develop and maintain applications tailored for the legal-tech
+              market. Integrate with 3rd party case management systems and
+              support existing workflows. Manage collection of tools to
+              streamline court-case process and maximize efficiency by reducing
+              reduntant tasks.
             </p>
           </div>
 
           <div className="resume-block">
             <div className="resume-block__header">
-              <h4 className="h3">Facebook</h4>
+              <h4 className="h3">Willis Towers Watson</h4>
               <p className="resume-block__header-meta">
-                <span>UI/UX Designer</span>
+                <span>Software Developer</span>
                 <span className="resume-block__header-date">
-                  August 2016 - July 2019
+                  June 2019 - March 2023
                 </span>
               </p>
             </div>
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore vero quidem nobis maxime dolorem aliquam quisquam eum
-              ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat
-              nam. Impedit aperiam nesciunt facilis! Porro architecto dicta
-              inventore tempora ratione quia odio.
+              Supervise all facets of software development including
+              requirements gathering, code deployments, and technical
+              documentation creation. Train and upskill employees on technical
+              aspects as well as policies/procedures of the team. Manage suite
+              of risk tools to measure corporation's risk portfolio. Coordinate
+              with Stakeholders, Analysts, and QA Engineers to increase
+              efficiency of project workflow. Develop and improve new/existing
+              applications, expand technology platforms, and address client
+              needs. Enhance shared projects by transforming specific components
+              for more flexibility. Orchestrate knowledge-sharing sessions to
+              strengthen the knowledge base of technology team.
             </p>
           </div>
         </div>
@@ -60,37 +66,31 @@ const Resume: FC = () => {
         <div className="column large-9 tab-12">
           <div className="resume-block">
             <div className="resume-block__header">
-              <h4 className="h3">University of Life</h4>
+              <h4 className="h3">CUNY Queens, City University of New York</h4>
               <p className="resume-block__header-meta">
-                <span>Master in Graphic Design</span>
-                <span className="resume-block__header-date">April 2015</span>
+                <span>B.A. in Computer Science</span>
+                <span className="resume-block__header-date">May 2010</span>
               </p>
             </div>
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore vero quidem nobis maxime dolorem aliquam quisquam eum
-              ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat
-              nam. Impedit aperiam nesciunt facilis! Porro architecto dicta
-              inventore tempora ratione quia odio.
+              Focus studies on higher level Computer Science courses. Interests
+              in the study of Bioinformatics and Quantum Computing.
             </p>
           </div>
 
           <div className="resume-block">
             <div className="resume-block__header">
-              <h4 className="h3">School of Cool Designers</h4>
+              <h4 className="h3">Nassau Community College</h4>
               <p className="resume-block__header-meta">
-                <span>B.A. Degree in Graphic Design</span>
-                <span className="resume-block__header-date">August 2012</span>
+                <span>A.S. in Computer Science</span>
+                <span className="resume-block__header-date">May 2008</span>
               </p>
             </div>
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore vero quidem nobis maxime dolorem aliquam quisquam eum
-              ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat
-              nam. Impedit aperiam nesciunt facilis! Porro architecto dicta
-              inventore tempora ratione quia odio.
+              Focus studies on mathematic, science and lower level computer
+              science courses.
             </p>
           </div>
         </div>
@@ -103,37 +103,39 @@ const Resume: FC = () => {
         <div className="column large-9 tab-12">
           <div className="resume-block">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore vero quidem nobis maxime dolorem aliquam quisquam eum
-              ipsum amet. Vitae aut atque fuga dolorem. Vel voluptatibus fugiat
-              nam. Impedit aperiam nesciunt facilis! Porro architecto dicta
-              inventore tempora ratione quia odio.
+              I'm a Full Stack Software Developer so my toolset ranges from
+              robust code editors to database management tools to deployment
+              orchestrators.
             </p>
 
             <ul className="skill-bars-fat">
               <li>
                 <div className="progress percent85"></div>
-                <strong>HTML</strong>
+                <strong>Web (HTML, CSS, JS/JS Frameworks)</strong>
               </li>
               <li>
                 <div className="progress percent85"></div>
-                <strong>CSS</strong>
+                <strong>
+                  Databases (MS Sql Server, MongoDb, Firebase, Cosmos Db)
+                </strong>
               </li>
               <li>
-                <div className="progress percent65"></div>
-                <strong>Javascript</strong>
+                <div className="progress percent80"></div>
+                <strong>
+                  OS (Microsoft Windows, Windows Server, Linux, Unix)
+                </strong>
               </li>
               <li>
                 <div className="progress percent90"></div>
-                <strong>Figma</strong>
+                <strong>
+                  Platforms (Visual Studio, Docker, Git, Kubernetes)
+                </strong>
               </li>
               <li>
                 <div className="progress percent75"></div>
-                <strong>Illustrator</strong>
-              </li>
-              <li>
-                <div className="progress percent60"></div>
-                <strong>Photoshop</strong>
+                <strong>
+                  Cloud Platforms (Microsoft Azure, Amazon Web Services)
+                </strong>
               </li>
             </ul>
           </div>

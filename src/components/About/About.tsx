@@ -49,7 +49,12 @@ const About: FC = () => {
               </p>
             </div>
             <div className="column w-1000-stack">
-              <a href="#0" className="btn btn--download">
+              <a
+                href="https://firebasestorage.googleapis.com/v0/b/portfolio-site-react-e0569.appspot.com/o/JasonCarvalhoResume.pdf?alt=media&token=8a7a635e-c200-452c-ad16-18a678c4fc22"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn--download"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -59,7 +64,7 @@ const About: FC = () => {
                   <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
                   <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
                 </svg>
-                Download CV
+                Download PDF
               </a>
             </div>
           </div>

@@ -3,6 +3,14 @@ import "./Footer.css";
 
 import { FC, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import {
+  faFacebookSquare,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /*  footer
     ================================================== 
@@ -38,35 +46,45 @@ const Footer: FC = () => {
         <div className="column large-4 medium-6 w-1000-stack s-footer__social-block">
           <ul className="s-footer__social">
             <li>
-              <a href="#0">
-                <i className="fab fa-facebook-f" aria-hidden="true"></i>
+              <a
+                href="https://www.facebook.com/jason.carvalho.125"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebookSquare} />
               </a>
             </li>
             <li>
-              <a href="#0">
-                <i className="fab fa-twitter" aria-hidden="true"></i>
+              <a
+                href="https://www.twitter.com/lead1290"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <a href="#0">
-                <i className="fab fa-instagram" aria-hidden="true"></i>
+              <a
+                href="https://www.github.com/Littlelink9234"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li>
-              <a href="#0">
-                <i className="fab fa-dribbble" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#0">
-                <i className="fab fa-linkedin-in" aria-hidden="true"></i>
+              <a
+                href="https://www.linkedin.com/in/jasoncarvalho1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
           </ul>
         </div>
 
         <div className="column large-7 medium-6 w-1000-stack ss-copyright">
-          <span>© Copyright Ceevee 2021</span>
           <span>
             Design by <a href="https://www.styleshout.com/">StyleShout</a>
           </span>

@@ -20,7 +20,7 @@ const Contact: FC = () => {
         <div className="column large-7 medium-12">
           <h4 className="huge-text">
             Have a new project in mind? Let's collaborate and build something
-            awesome. Let's turn that idea to an even greater product :)
+            awesome. Let's turn that idea to an even greater product. :)
           </h4>
         </div>
 
@@ -30,25 +30,17 @@ const Contact: FC = () => {
               <div className="contact-block">
                 <h5 className="contact-block__header">Email</h5>
                 <p className="contact-block__content">
-                  <a className="mailtoui" href="mailto:sayhello@ceevee.com">
-                    sayhello@ceevee.com
+                  <a className="" href="mailto:jason.carvalho1@gmail.com">
+                    jason.carvalho1@gmail.com
                   </a>
-                </p>
-              </div>
-            </div>
-            <div className="column large-12 medium-6 tab-12">
-              <div className="contact-block">
-                <h5 className="contact-block__header">Phone</h5>
-                <p className="contact-block__content">
-                  <a href="tel:+1975432345">+197 543 2345</a>
                 </p>
               </div>
             </div>
 
             <div className="column large-12">
               <a
-                href="mailto:sayhello@ceevee.com"
-                className="mailtoui btn btn--primary h-full-width"
+                href="mailto:jason.carvalho1@gmail.com"
+                className="btn btn--primary h-full-width"
               >
                 Let's Talk
               </a>

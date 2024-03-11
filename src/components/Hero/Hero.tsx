@@ -54,8 +54,7 @@ const Hero: FC = () => {
             <h3>
               I'm a New York based <span>software engineer</span>,{" "}
               <span>gamer</span> and <span>technology enthusiast</span> building
-              awesome and effective applications for companies of all sizes.
-              Let's{" "}
+              awesome applications for companies of all sizes. Let's{" "}
               <Link
                 className="smoothscroll"
                 href="#about"

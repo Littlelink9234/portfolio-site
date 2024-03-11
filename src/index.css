@@ -2391,3 +2391,45 @@ button.btn--pill {
   padding-right: 3.2rem !important;
   border-radius: 1000px !important;
 }
+
+/* ===================================================================
+ * # common and reusable styles
+ *
+ * ------------------------------------------------------------------- */
+.wide {
+  max-width: var(--width-wide);
+}
+
+.narrow {
+  max-width: var(--width-narrow);
+}
+
+.sticky-block {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+}
+
+.section-header-allcaps {
+  display: inline-block;
+  font-size: var(--text-size);
+  line-height: var(--vspace-1_25);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding-left: 0.25em;
+  padding-bottom: 0.1em;
+  margin-top: 0;
+  margin-bottom: var(--vspace-1_5);
+  position: relative;
+}
+
+.section-header-allcaps:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
