@@ -195,3 +195,9 @@
 .skill-bars-fat li .percent100::before {
   width: 100%;
 }
+
+@media screen and (max-width: 868px) {
+  .skill-bars-fat li strong {
+    top: -3.8rem;
+  }
+}

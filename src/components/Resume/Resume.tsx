@@ -17,7 +17,7 @@ const Resume: FC = () => {
               <p className="resume-block__header-meta">
                 <span>Software Engineer</span>
                 <span className="resume-block__header-date">
-                  June 2023 - Present
+                  June 2023 - June 2024
                 </span>
               </p>
             </div>
@@ -111,19 +111,15 @@ const Resume: FC = () => {
             <ul className="skill-bars-fat">
               <li>
                 <div className="progress percent85"></div>
-                <strong>Web (HTML, CSS, JS/JS Frameworks)</strong>
+                <strong>Web (HTML, CSS, JS, React, Angular)</strong>
               </li>
               <li>
                 <div className="progress percent85"></div>
-                <strong>
-                  Databases (MS Sql Server, MongoDb, Firebase, Cosmos Db)
-                </strong>
+                <strong>Databases (Sql Server, MongoDb, Cosmos Db)</strong>
               </li>
               <li>
                 <div className="progress percent80"></div>
-                <strong>
-                  OS (Microsoft Windows, Windows Server, Linux, Unix)
-                </strong>
+                <strong>OS (Microsoft Windows, Linux, MacOS)</strong>
               </li>
               <li>
                 <div className="progress percent90"></div>
